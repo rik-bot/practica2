@@ -1,17 +1,16 @@
 <?php
 
-define("ROOT", dirname(__DIR__));
-define("PUBLIC", ROOT . '/public');
-define("CONFIG", ROOT . '/config');
-define("CORE", ROOT . '/core');
-define("APP", ROOT . '/app');
-define("CONTROLLERS", APP . '/controllers');
-define("VIEWS", APP . '/views');
-define("PATH", 'http://practica-mvc');
-
+require dirname(__DIR__) . '/config/config.php';
 require CORE . '/funcs.php';
 
-require CONFIG . '/routes.php';
+require CORE . '/classes/Db.php';
+
+$db_config = require  CONFIG . '/db.php';
+$db = new Db($db_config);
+
+
+
+
 require CORE . '/router.php';
 
 

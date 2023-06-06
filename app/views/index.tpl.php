@@ -12,9 +12,9 @@
 
                     <div class="card mb-3">
                         <div class="card-body">
-                            <h5 class="card-title"><a href="post/<?= $post['slug'] ?>"><?= $post['title'] ?></a></h5>
-                            <p class="card-text"><?= $post['desc'] ?></p>
-                            <a href="post/<?= $post['slug'] ?>">Go somehere</a>
+                            <h5 class="card-title"><a href="post?id=<?= $post['id'] ?>"><?= $post['title'] ?></a></h5>
+                            <p class="card-text"><?= $post['excerpt'] ?></p>
+                            <a href="post?id=<?= $post['id'] ?>">Go somehere</a>
                         </div>
                     </div>
                 <?php endforeach; ?>
