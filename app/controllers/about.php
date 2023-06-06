@@ -2,7 +2,6 @@
 
 
 
-require 'funcs.php';
 
 $title = 'My Blog :: About';
 
@@ -37,4 +36,4 @@ $recent_posts = [
   ],
 ];
 
-include_once 'app/views/about.tpl.php';
+include_once VIEWS . '/about.tpl.php';

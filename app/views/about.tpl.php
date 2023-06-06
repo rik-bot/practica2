@@ -1,4 +1,4 @@
-<?php include_once 'incs/header.php' ?>
+<?php require 'incs/header.php' ?>
 
 <main class="main py-3">
 
@@ -9,7 +9,7 @@
                 <?= $post ?>
             </div>
 
-            <?php include_once 'incs/sidebar.php' ?>
+            <?php require 'incs/sidebar.php' ?>
 
 
         </div>
@@ -17,4 +17,4 @@
 
 </main>
 
-<?php include_once 'incs/footer.php' ?>
+<?php require 'incs/footer.php' ?>
